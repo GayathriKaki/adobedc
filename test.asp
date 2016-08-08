@@ -1,35 +1,23 @@
 <html>
 <head>
-<title>Welcome to the ABC Company</title>
+<title>Welcome to the Adobe DC POC</title>
 </head>
 <body>
-<p align="center"><b>Welcome to the ABC Company </b></p>
-FIGURE 2.2
-A simple ASP page
-but with enhanced
-functionality,
-compared to the
-.html version.
-TRICK
-TEAMFLY
-Team-Fly®
-Chapter2ProgrammingASP Web Pageswith VBScript
-<p align="center"><b>Today is <%=DATE%></b>
-
+<p align="center"><b>Welcome to the Adobe DC POC</b><br>
+A simple ASP page but with enhanced functionality to capture data from Adobe DC Form
+</p>
 <%
-response.write("phani")
+//response.write("phani")
 response.write("<br>")
-response.write(request.form("fname"))
+response.write("First Name Typed in DC Form : " & request.form("fname"))
 response.write("<br>")
-response.write(request.form("lname"))
+response.write("Last Name Typed in DC Form : " & request.form("lname"))
 response.write("<br>")
 response.write(request.form("sign"))
 %>
 
-</p> 27
+</p>
 <hr>
-<p align="left"><i>Thanks for your interest in the ABC Company!&nbsp; Complete
-the form below, and you will immediately receive information about the company
-via e-mail!</i></p>
+<p align="left"><i>Thanks for your interest in Adobe DC Forms!&nbsp;</i></p>
 </body>
 </html>
