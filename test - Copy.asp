@@ -17,7 +17,6 @@ Chapter2ProgrammingASP Web Pageswith VBScript
 <p align="center"><b>Today is <%=DATE%></b>
 
 <%
-response.write("phani")
 response.write("<br>")
 response.write(request.form("fname"))
 response.write("<br>")
